@@ -70,7 +70,39 @@ const data: Data = {
             description: 'I am currently working on my portfolio as a front-end developer.'
         }
     ],
-    sideProjects: []
+    sideProjects: [
+        {
+            name: 'Laser Skateboard',
+            role: 'Chief Architect',
+            startDate: new Date('2019-03-01'),
+            description: 'We built an awesome skateboard that shoots lasers at your enemies.',
+            link: 'https://laser-skateboard.com'
+        },
+        {
+            name: 'Mom\'s Pyjamas',
+            role: 'Web Master',
+            startDate: new Date('2001-12-01'),
+            endDate: new Date('2003-03-01'),
+            description: 'Pyjamas are a collection of fun and practical items that are perfect for the little ones.',
+            link: 'https://amazon.com/pyjamas'
+        }
+    ],
+    education: [
+        {
+            institution: 'Waterloo University',
+            program: 'Information Technology',
+            startDate: new Date('2016-09-01'),
+            endDate: new Date('2020-04-01'),
+            description: 'Learned lots about technology and how to use it to solve problems.'
+        },
+        {
+            institution: 'Mary-ann\'s School of Cooking',
+            program: 'Culinary Arts',
+            startDate: new Date('2003-09-01'),
+            endDate: new Date('2006-04-01'),
+            description: 'Learned how to cook and how to make friends. I learned how to be a good cook. I learned how to be a good cook.'
+        }
+    ]
 }
 
 export default data;

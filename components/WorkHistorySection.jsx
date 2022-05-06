@@ -4,6 +4,7 @@ import { RiBuilding2Line } from 'react-icons/ri'
 import data from '../data'
 import SectionHeading from './SectionHeading'
 import SectionContainer from './SectionContainer'
+import WorkPeriod from './WorkPeriod'
 
 const WorkHistorySection = () => {
     const areThereAnyLogos = data.workHistory.some((work) => work.logo)
@@ -63,32 +64,6 @@ const WorkHistorySection = () => {
                 )
             })}
         </SectionContainer>
-    )
-}
-
-const WorkPeriod = ({ startDate, endDate }) => {
-    const calculatedEndDate = endDate ?? new Date()
-    const jobLengthInMonths =
-        (calculatedEndDate - startDate) / (1000 * 60 * 60 * 24 * 30)
-    return (
-        <div className="flex flex-col items-end font-sans opacity-50 uppercase text-xxs">
-            <div>
-                {startDate.toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                })}
-                {` - `}
-                {endDate &&
-                    endDate.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'short',
-                    })}
-                {!endDate && 'Present'}
-            </div>
-            <div className="ml-2 opacity-50">
-                {Math.round(jobLengthInMonths)} months
-            </div>
-        </div>
     )
 }
 
