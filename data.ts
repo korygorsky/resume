@@ -26,6 +26,12 @@ interface Education {
     description: string;
 }
 
+interface Links {
+    logo?: string;
+    name: string;
+    href: string;
+}
+
 interface Data {
     fullName: string;
     lookingFor: string;
@@ -38,6 +44,7 @@ interface Data {
     workHistory: WorkHistory[];
     sideProjects?: SideProject[];
     education?: Education[];
+    links?: Links[];
 }
 
 const data: Data = {
@@ -103,6 +110,16 @@ const data: Data = {
             startDate: new Date('2003-09-01'),
             endDate: new Date('2006-04-01'),
             description: 'Learned how to cook and how to make friends. I learned how to be a good cook. I learned how to be a good cook.'
+        }
+    ],
+    links: [
+        {
+            name: 'Github',
+            href: 'https://github.com/kylewyatt'
+        },
+        {
+            name: 'LinkedIn',
+            href: 'https://linkedin.com/kylewyatt'
         }
     ]
 }
