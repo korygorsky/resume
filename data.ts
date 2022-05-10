@@ -34,19 +34,21 @@ interface Data {
     phone: string;
     email: string;
     bio: string;
+    showLogos: boolean;
     workHistory: WorkHistory[];
     sideProjects?: SideProject[];
     education?: Education[];
 }
 
 const data: Data = {
-    fullName: 'Steven Wyatt',
+    fullName: 'Kyle Wyatt',
     lookingFor: 'Senior Front End Developer',
     profilePicture: '/avatar.jpg',
     location: 'Los Angeles, CA',
     phone: '+44 (0) 7861 888 888',
     email: 'chris@example.com',
     bio: 'I am a full-stack developer with a passion for building beautiful, responsive, and intuitive user interfaces. I have a background in design and development, and I am currently working on my portfolio as a front-end developer.',
+    showLogos: true,
     workHistory: [
         {
             logo: '/company1.png',

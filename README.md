@@ -14,7 +14,6 @@ Live Demo: https://open-resume.vercel.app/
 ## Todo
 
 ### Features to Add
-- [ ] Add alt to images
 - [ ] Add links (LinkedIn, Github, Personal Website)
 - [ ] Print Optimizations
 - [ ] Individual pages for a potential employer (eg, Conver letters)
@@ -23,7 +22,7 @@ Live Demo: https://open-resume.vercel.app/
 ### Smaller things to fix
 - [ ] Ability to hide contact details so not everyone can read them
 - [ ] Write a proper README
-- [ ] Toggle to show logos / circle initials - rather than depending on whether a logo is present
+
 
 ### Future Features
 - [ ] Some of your tweet highlights?
@@ -38,3 +37,5 @@ Live Demo: https://open-resume.vercel.app/
 - [x] Education History
 - [x] Side Projects
 - [x] Fix the breakpoint for printing
+- [x] Add alt to images
+- [x] Toggle to show logos / circle initials - rather than depending on whether a logo is present

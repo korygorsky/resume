@@ -7,8 +7,6 @@ import SectionContainer from './SectionContainer'
 import WorkPeriod from './WorkPeriod'
 
 const WorkHistorySection = () => {
-    const areThereAnyLogos = data.workHistory.some((work) => work.logo)
-
     return (
         <SectionContainer>
             <SectionHeading title="Work History" icon={RiBuilding2Line} />
@@ -21,10 +19,14 @@ const WorkHistorySection = () => {
                     .join('')
                 return (
                     <div key={work.startDate} className="flex mb-8">
-                        {areThereAnyLogos && (
+                        {data.showLogos && (
                             <div className="relative aspect-square w-10 h-10 mr-4">
                                 {work.logo && (
-                                    <Image src={work.logo} layout="fill" />
+                                    <Image
+                                        alt={`${work.company}'s logo`}
+                                        src={work.logo}
+                                        layout="fill"
+                                    />
                                 )}
                                 {!work.logo && (
                                     <div className="bg-gray-200 rounded-full flex items-center justify-center w-10 h-10 text-white text-xl font-sans">

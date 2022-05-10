@@ -7,8 +7,6 @@ import SectionContainer from './SectionContainer'
 import WorkPeriod from './WorkPeriod'
 
 const EducationSection = () => {
-    const areThereAnyLogos = data.education.some((school) => school.logo)
-
     return (
         <SectionContainer>
             <SectionHeading title="Education" icon={RiBookOpenLine} />
@@ -21,10 +19,14 @@ const EducationSection = () => {
                     .join('')
                 return (
                     <div key={school.startDate} className="flex mb-8">
-                        {areThereAnyLogos && (
+                        {data.showLogos && (
                             <div className="relative aspect-square w-10 h-10 mr-4">
                                 {school.logo && (
-                                    <Image src={school.logo} layout="fill" />
+                                    <Image
+                                        alt={`${school.institution}'s logo`}
+                                        src={school.logo}
+                                        layout="fill"
+                                    />
                                 )}
                                 {!school.logo && (
                                     <div className="bg-gray-200 rounded-full flex items-center justify-center w-10 h-10 text-white text-xl font-sans">

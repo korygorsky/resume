@@ -7,8 +7,6 @@ import SectionContainer from './SectionContainer'
 import WorkPeriod from './WorkPeriod'
 
 const SideProjectsSection = () => {
-    const areThereAnyLogos = data.sideProjects.some((project) => project.logo)
-
     return (
         <SectionContainer>
             <SectionHeading title="Side Projects" icon={RiPencilRuler2Line} />
@@ -21,10 +19,14 @@ const SideProjectsSection = () => {
                     .join('')
                 return (
                     <div key={project.startDate} className="flex mb-8">
-                        {areThereAnyLogos && (
+                        {data.showLogos && (
                             <div className="relative aspect-square w-10 h-10 mr-4">
                                 {project.logo && (
-                                    <Image src={project.logo} layout="fill" />
+                                    <Image
+                                        alt={`${project.name}'s logo`}
+                                        src={project.logo}
+                                        layout="fill"
+                                    />
                                 )}
                                 {!project.logo && (
                                     <div className="bg-gray-200 rounded-full flex items-center justify-center w-10 h-10 text-white text-xl font-sans">
