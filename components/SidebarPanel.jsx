@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import data from '../data'
+import Links from './Links'
 
 const SidebarPanel = () => {
     return (
@@ -16,6 +17,7 @@ const SidebarPanel = () => {
             <h2>{data.location}</h2>
             <h2>{data.phone}</h2>
             <h2>{data.email}</h2>
+            <Links links={data.links} />
         </div>
     )
 }

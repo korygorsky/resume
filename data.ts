@@ -1,3 +1,6 @@
+import { IconType } from 'react-icons'
+import { RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri';
+
 interface WorkHistory {
     logo?: string;
     company: string;
@@ -27,7 +30,7 @@ interface Education {
 }
 
 interface Links {
-    logo?: string;
+    icon?: IconType;
     name: string;
     href: string;
 }
@@ -114,10 +117,12 @@ const data: Data = {
     ],
     links: [
         {
+            icon: RiGithubFill,
             name: 'Github',
             href: 'https://github.com/kylewyatt'
         },
         {
+            icon: RiLinkedinBoxFill,
             name: 'LinkedIn',
             href: 'https://linkedin.com/kylewyatt'
         }
