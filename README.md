@@ -14,16 +14,11 @@ Live Demo: https://open-resume.vercel.app/
 ## Todo
 
 ### Features to Add
-- [ ] Making the sidebar suck less
-- [ ] Print Optimizations
+- [ ] Key Experiences under work history
 - [ ] Individual pages for a potential employer (eg, Conver letters)
     - [ ] These will have things you like / are interested in about the company and why you want to work there
-- [ ] Key Experiences under work history
-- [ ] Markdown for the text sections
-  - [ ] Bio
-  - [ ] Work History
-  - [ ] Education
-  - [ ] Side Projects
+- [ ] "Strengths" pills below role you're looking for
+- [ ] Print Optimizations
   
 ### Smaller things to fix
 - [ ] Ability to hide contact details so not everyone can read them
@@ -32,6 +27,13 @@ Live Demo: https://open-resume.vercel.app/
 
 ### Future Features
 - [ ] Some of your tweet highlights?
+
+### Future "Maybe" Features
+- [ ] Markdown for the text sections
+  - [ ] Bio
+  - [ ] Work History
+  - [ ] Education
+  - [ ] Side Projects
 
 ## Done
 
@@ -48,3 +50,4 @@ Live Demo: https://open-resume.vercel.app/
 - [x] Add links (LinkedIn, Github, Personal Website)
   - [x] Move it to its own component
   - [x] Add logos/icons for the links
+- [x] Making the sidebar suck less
