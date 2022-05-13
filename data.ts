@@ -51,7 +51,7 @@ interface Data {
 }
 
 const data: Data = {
-    fullName: 'Kyle Wyatt',
+    fullName: 'Stevey Wyatt',
     lookingFor: 'Senior Front End Developer',
     profilePicture: '/avatar.jpg',
     location: 'Los Angeles, CA',

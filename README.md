@@ -14,7 +14,7 @@ Live Demo: https://open-resume.vercel.app/
 ## Todo
 
 ### Features to Add
-- [ ] Allow download of PDF with Button
+- [ ] Replacing with some real data 
 - [ ] Key Experiences under work history
 - [ ] Individual pages for a potential employer (eg, Conver letters)
     - [ ] These will have things you like / are interested in about the company and why you want to work there
@@ -24,6 +24,7 @@ Live Demo: https://open-resume.vercel.app/
   
 ### Smaller things to fix
 - [ ] Write a proper README explaining how to use this repo
+- [ ] When downloading a pdf, content gets clipped between pages
 
 
 ### Future Features
@@ -52,3 +53,4 @@ Live Demo: https://open-resume.vercel.app/
   - [x] Move it to its own component
   - [x] Add logos/icons for the links
 - [x] Making the sidebar suck less
+- [x] Allow download of PDF with Button
