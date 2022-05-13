@@ -19,6 +19,8 @@ const EducationSection = () => {
                     description={school.description}
                     startDate={school.startDate}
                     endDate={school.endDate}
+                    accomplishments={school.accomplishments}
+                    skills={school.skills}
                 />
             ))}
         </SectionContainer>

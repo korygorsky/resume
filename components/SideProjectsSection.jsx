@@ -19,6 +19,8 @@ const SideProjectsSection = () => {
                     description={project.description}
                     startDate={project.startDate}
                     endDate={project.endDate}
+                    accomplishments={project.accomplishments}
+                    skills={project.skills}
                 />
             ))}
         </SectionContainer>

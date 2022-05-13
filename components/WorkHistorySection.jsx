@@ -19,6 +19,8 @@ const WorkHistorySection = () => {
                     description={work.description}
                     startDate={work.startDate}
                     endDate={work.endDate}
+                    accomplishments={work.accomplishments}
+                    skills={work.skills}
                 />
             ))}
         </SectionContainer>

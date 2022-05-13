@@ -8,6 +8,8 @@ interface WorkHistory {
     startDate: Date;
     endDate?: Date;
     description: string;
+    accomplishments?: string[];
+    skills?: string[];
 }
 
 interface SideProject {
@@ -18,6 +20,8 @@ interface SideProject {
     endDate?: Date;
     description: string;
     link: string;
+    accomplishments?: string[];
+    skills?: string[];
 }
 
 interface Education {
@@ -27,6 +31,8 @@ interface Education {
     startDate: Date;
     endDate?: Date;
     description: string;
+    accomplishments?: string[];
+    skills?: string[];
 }
 
 interface Links {
@@ -65,21 +71,31 @@ const data: Data = {
             company: 'Maybe Inc',
             position: 'Senior Developer',
             startDate: new Date('2021-12-02'),
-            description: 'I am currently working on my portfolio as a front-end developer.'
+            description: 'He swung back the fishing pole and cast the line which ell 25 feet away into the river. The lure landed in the perfect spot and he was sure he would soon get a bite. He never expected that the bite would come from behind in the form of a bear.',
+            accomplishments: [
+                'Created a new website for a local business',
+                'Was able to rebrand the entire experience',
+                'Created a new website for a local business',
+            ],
+            skills: [
+                'HTML',
+                'CSS',
+                'JavaScript',
+            ]
         },
         {
             company: 'Self-Employed',
             position: 'Freelance Web Developer',
             startDate: new Date('2019-01-01'),
             endDate: new Date('2021-12-01'),
-            description: 'I am currently working on my portfolio as a front-end developer. I am currently working on my portfolio as a front-end developer.'
+            description: 'They had no proof. He knew that they knew he had done it but they didn\'t have any proof. It was a huge distinction and it was the difference between him keeping his freedom or being locked away for decades. They continued to question him, probing him for information that they could use against him or find the proof they needed to put him away. He smiled and continued to block their every inquiry by feigning his innocence for a crime they all knew he committed.'
         },
         {
             company: 'IBM',
             position: 'Senior Front-End Developer',
             startDate: new Date('2017-01-01'),
             endDate: new Date('2018-12-31'),
-            description: 'I am currently working on my portfolio as a front-end developer.'
+            description: 'It probably seemed trivial to most people, but it mattered to Tracey. She wasn\'t sure why it mattered so much to her, but she understood deep within her being that it mattered to her. So for the 365th day in a row, Tracey sat down to eat pancakes for breakfast.'
         }
     ],
     sideProjects: [
@@ -88,7 +104,11 @@ const data: Data = {
             role: 'Chief Architect',
             startDate: new Date('2019-03-01'),
             description: 'We built an awesome skateboard that shoots lasers at your enemies.',
-            link: 'https://laser-skateboard.com'
+            link: 'https://laser-skateboard.com',
+            skills: [
+                'Engineering',
+                'Industrial Design'
+            ]
         },
         {
             name: 'Mom\'s Pyjamas',
