@@ -14,6 +14,7 @@ Live Demo: https://open-resume.vercel.app/
 ## Todo
 
 ### Features to Add
+- [ ] Allow download of PDF with Button
 - [ ] Key Experiences under work history
 - [ ] Individual pages for a potential employer (eg, Conver letters)
     - [ ] These will have things you like / are interested in about the company and why you want to work there
