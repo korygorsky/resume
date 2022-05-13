@@ -20,7 +20,7 @@ const Company = () => {
                 setCompany(company)
             }
         }
-    }, [id])
+    }, [id, router])
 
     if (!company) {
         return <div className="flex justify-center mt-6">Loading...</div>

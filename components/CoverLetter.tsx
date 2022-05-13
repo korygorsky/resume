@@ -16,7 +16,7 @@ const CoverLetter = ({ company }: CoverLetterProps) => {
                 <div className="mt-5">
                     <h3 className="flex font-bold mb-2 items-center">
                         <RiHeart2Line className="mr-1" />
-                        Reasons I'd Love to Work for {company.companyName}
+                        Reasons I&apos;d Love to Work for {company.companyName}
                     </h3>
                     <ul className="ml-8">
                         {company.reasons.map((reason, index) => (
