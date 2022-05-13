@@ -41,6 +41,17 @@ interface Links {
     href: string;
 }
 
+export interface PotentialEmployer {
+    companyName: string;
+    salutation?: string;
+    shortIntro: string;
+    reasons?: string[];
+}
+
+interface PotentialEmployers {
+    [name: string] : PotentialEmployer
+}
+
 interface Data {
     fullName: string;
     lookingFor: string;
@@ -54,6 +65,7 @@ interface Data {
     sideProjects?: SideProject[];
     education?: Education[];
     links?: Links[];
+    potentialEmployers?: PotentialEmployers;
 }
 
 const data: Data = {
@@ -146,7 +158,18 @@ const data: Data = {
             name: 'LinkedIn',
             href: 'https://linkedin.com/kylewyatt'
         }
-    ]
+    ],
+    potentialEmployers: {
+        'netflix': {
+            companyName: 'Netflix',
+            salutation: 'Dear Sally Wentsworth',
+            shortIntro: 'I\'m really interested in the future of streaming media. Netflix has been somewhere that I\'ve always wanted to work. I\'d be very excited for any opportunity available.',
+            reasons: [
+                'I\'m a huge Netflix fan',
+                'I watch Bridgerton every night',
+            ]
+        }
+    }
 }
 
 export default data;

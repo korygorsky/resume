@@ -2,7 +2,7 @@ import DetailsPanel from '../components/DetailsPanel'
 import SidebarPanel from '../components/SidebarPanel'
 import DownloadPDF from '../components/DownloadPDF'
 
-export default function Home() {
+export default function Home({ company = null }) {
     return (
         <>
             <DownloadPDF />
@@ -12,7 +12,7 @@ export default function Home() {
                         <SidebarPanel />
                     </div>
                     <div className="grow ">
-                        <DetailsPanel />
+                        <DetailsPanel company={company} />
                     </div>
                 </div>
             </div>

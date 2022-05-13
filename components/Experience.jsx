@@ -22,7 +22,7 @@ const Experience = ({
         })
         .join('')
     return (
-        <div className="flex mb-8">
+        <div className="flex mb-8 break-inside-avoid-page">
             {showLogos && (
                 <div className="relative aspect-square w-10 h-10 mr-4">
                     {logo && (
@@ -78,7 +78,10 @@ const Experience = ({
                 {!!skills && skills.length > 0 && (
                     <div className="flex mt-3">
                         {skills.map((skill) => (
-                            <div className="bg-gray-100 text-gray-500 font-sans ml-2 inline-block py-1 px-2 rounded-lg text-xs ">
+                            <div
+                                key={skill}
+                                className="bg-gray-100 text-gray-500 font-sans ml-2 inline-block py-1 px-2 rounded-lg text-xs "
+                            >
                                 {skill}
                             </div>
                         ))}

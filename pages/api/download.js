@@ -1,5 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import {
     initBrowser,
     generatePDF,
@@ -9,9 +7,9 @@ import {
 export default async function handler(req, res) {
     const browser = await initBrowser()
 
-    const { pdf } = await generatePDF(browser, [
-        { url: 'http://localhost:3000' },
-    ])
+    const url = 'http://localhost:3000' + (req.query.path ?? '/')
+
+    const { pdf } = await generatePDF(browser, [{ url }])
 
     res.setHeader('Content-Type', 'application/pdf')
     res.setHeader('Content-Disposition', 'attachment; filename=resume.pdf')
