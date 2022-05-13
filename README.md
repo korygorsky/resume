@@ -8,7 +8,7 @@ Plan is to build an open-source clean resume that anyone can use.
 - 🏗 Easily editable / hostable
 - 🖨 Dynamic Print / Web Version
 
-
+Repo: https://github.com/korygorsky/resume
 Live Demo: https://open-resume.vercel.app/
 
 ## Todo
