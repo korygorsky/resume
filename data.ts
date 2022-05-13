@@ -55,6 +55,7 @@ interface PotentialEmployers {
 interface Data {
     fullName: string;
     lookingFor: string;
+    strengths?: string[];
     profilePicture: string;
     location: string;
     phone: string;
@@ -71,6 +72,11 @@ interface Data {
 const data: Data = {
     fullName: 'Stevey Wyatt',
     lookingFor: 'Senior Front End Developer',
+    strengths: [
+        'Front-end Dev',
+        'Database Design',
+        'Underwater Basket Weaving'
+    ],
     profilePicture: '/avatar.jpg',
     location: 'Los Angeles, CA',
     phone: '+44 (0) 7861 888 888',
